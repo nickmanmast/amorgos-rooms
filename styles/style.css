@@ -1,0 +1,701 @@
+/* Ετοιμο style sheet μεχρι την γραμμη 95 */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0; 
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none; 
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* MY CODE */
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+/* Header */
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+header .header-brand{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+header nav ul{
+       display: block;
+       margin:0 auto;
+       width:fit-content;
+}
+header nav ul li{
+    display:inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 0 16px;
+    list-style: none; /*Για να μην ειναι underlined */
+}
+header nav ul li a{
+    color:#111;
+}
+
+/*Changes for tablet*/
+
+@media screen and (min-width:481px) and (max-width:768px){
+    
+    header .header-brand{
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+}
+
+/*Changes for desktop */
+
+@media screen and (min-width: 769px){
+      
+    header .header-brand{
+
+        margin: 50px 0;
+        text-align: left;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right: 3px solid #111;
+        float:left;
+    }
+    header nav ul{
+        
+        margin:0;
+        float:left;
+        
+ }
+ header nav ul li{
+     display:inline-block;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 16px;
+     padding: 0 16px;
+     list-style: none; /*Για να μην ειναι underlined */
+ }
+ header nav ul li a{
+    line-height: 140px;
+     color:#111;
+ }
+}
+
+/* INDEX.html */
+
+
+.index-banner{
+    
+    width: 100%;
+    height:calc(70vh - 100px); /*Το ύψος του header*/
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/44/17/33/1000_F_244173337_vNbmTXVDwGIqNYMYKhOr9bbQ0LBvWWDH.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.index-banner h1{
+
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 50px;
+   font-weight: 900;
+   line-height: 60px;
+   color:#fff;
+   text-shadow: 2px 2px #111;
+   text-align: center;
+}
+
+.index-banner h2{
+    font-family:cursive;
+    font-size: 15px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 45px;
+    color:#111;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+
+.index-links div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 100px;
+    text-align: center;     
+    color:#111;
+}
+
+.index-boxlink{
+    margin: 16px 16px 0;
+    width:calc(100% - 32px);
+    height: 100px;
+    background-color: lightgrey;
+    margin-bottom: 16px;
+}
+
+/*Changes for desktop*/
+
+@media screen and (min-width: 769px){
+
+
+    .index-banner h1{
+        line-height: 60px;
+        clear:both;
+       /* float:left;*/
+     }
+     .index-banner h2{
+        line-height: 75px;
+        /*clear:left;
+        float: left;*/
+        margin-left: 50px;
+    }
+
+    .desk-wrapper{
+        width: 769px;
+        margin: 0px auto;
+    }
+
+    .index-links div{
+
+        margin: 10px auto; 
+        height: 150px;
+        float:left;
+    }
+    .index-boxlink{
+
+        width:calc(50%-10px) !important;
+
+    }
+
+}
+
+/*LOGIN.html*/
+
+.login-box{
+ 
+    float:left;
+    margin: 64px 16px 0;
+    width:calc(100% - 32px);
+    height: fit-content;
+    background-color: rgb(255, 255, 255,0.5);
+
+}
+
+.login-box form{
+    margin: 20px;
+    text-align: center;
+
+}
+.login-menu{
+    margin-top: 0px;
+}
+
+/*FIND-A-ROOM*/
+
+.find-a-room-search{
+    height: 75px;
+}
+
+
+.find-a-room-info p{
+    width:calc(100%-32px);
+    margin:16px;
+    border: solid 1pt lightgrey;
+    
+    font-size:15px;
+    height:fit-content;
+    clear:right;
+}
+
+.find-a-room-info img{
+    width: 50px;
+    float:right;
+}
+
+.find-a-room-link a{
+
+    border: solid 2pt #29c9c4;
+    color:lightseagreen;
+    margin-left: 16px;
+
+}
+
+/* Changes for tablet */
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+    .tab-wrapper{
+        width: 481px;
+        margin: 0px auto;
+    }
+
+    .find-a-room-link{
+        text-align: center;
+    }
+
+}
+
+/* Changes for desktop */
+
+@media screen and (min-width:769px){
+
+    .find-a-room-search{
+        clear:both;
+    }
+    .find-a-room-link{
+        text-align: center;
+    }
+}
+
+
+/* MORE */
+
+.more-img{
+    width: 100%;
+    
+}
+
+.more-info{
+    margin:0 16px;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.more-info p{
+    margin-top: 16px;
+}
+.more-info p a{
+    color:darkcyan;
+}
+
+/* Changes for desktop */
+
+@media screen and (min-width:769px){
+
+    .more-img{
+        
+        height:700px;
+    }
+
+}
+
+/* CONTACT */
+
+.contact-bgbanner{
+
+    width: 100%;
+    height:calc(130vh - 100px);
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/44/17/33/1000_F_244173337_vNbmTXVDwGIqNYMYKhOr9bbQ0LBvWWDH.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+}
+
+.contact-head{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight:900;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 2px 2px #111;
+    color:#f3f3f3;
+}
+
+.contact-bgbox{
+    float:left;
+    margin: 32px 16px 32px;
+    width:calc(100%-32px);
+    text-align: left;
+    background-color: rgb(255, 255, 255,0.5);
+}
+
+.contact-bgbox form{
+    margin-left: 25px;
+}
+
+/* Changes for tablet */
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+    .contact-bgbox{
+       
+        margin: 32px 100px 32px;
+        
+        text-align: left;
+        background-color: rgb(255, 255, 255,0.5);
+    }
+
+}
+
+/* Changes for desktop */
+
+@media screen and (min-width:769px){
+    
+    .contact-head{
+
+        clear:both;
+
+    }
+    .contact-bgbox{
+
+        margin: 32px 300px 32px;
+      
+    }
+}
+
+/* SIGN-UP */
+
+.sign-up-bgbanner{
+
+    height:calc(85vh - 100px);
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/44/17/33/1000_F_244173337_vNbmTXVDwGIqNYMYKhOr9bbQ0LBvWWDH.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+
+}
+
+.sign-up-head{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 2px 2px grey;
+}
+
+.sign-up-info{
+
+    height:fit-content;
+    margin:32px;
+    width:calc(100%-64px);
+    background-color: rgb(255, 255, 255,0.5);
+    
+}
+.sign-up-info table td{
+    padding:10px;
+}
+
+/* Changes for desktop */
+
+@media screen and (min-width:769px){
+
+    .sign-up-head{
+
+        clear:both;
+
+    }
+}
+
+/* CREATE_PAGE */
+
+.create_page-bgbanner{
+
+    height:calc(85vh - 100px);
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/44/17/33/1000_F_244173337_vNbmTXVDwGIqNYMYKhOr9bbQ0LBvWWDH.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.create_page-bgbox{
+
+    float:left;
+    margin: 64px 16px 0;
+    width:calc(100% - 32px);
+    height: fit-content;
+    background-color: rgb(255, 255, 255,0.5);
+
+}
+.create_page-bgbox h1{
+    text-align: center;
+    font-size: large;
+    margin: 20px 32px;
+    border:solid 1pt #000;
+}
+
+.create_page-bgbox form{
+    text-align: center;
+}
+
+/* Changes for tablet */
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+    .create_page-bgbox h1{
+        text-align: center;
+        font-size: large;
+        margin: 20px 112px;
+        border:solid 1pt #000;
+    }
+
+    .create_page-bgbox form table td{
+        padding:10px;
+    }
+
+    .create_page-bgbanner{
+
+        height:calc(100vh - 100px);
+
+    }
+
+}
+
+@media screen and (min-width:769px){
+
+    .create_page-bgbox h1{
+
+        margin: 20px 200px;
+
+    }
+    .create_page-bgbox form table td{
+        padding:5px;
+    }
+
+    .create_page-bgbanner{
+
+        height:calc(100vh - 100px);
+
+    }
+
+}
+
+/* Footer */
+
+.footer-menu{
+
+    width: calc(100% - 40px);
+    padding: 40px 20px;
+    height: 330px;
+    background-color: #111;
+    /*margin-top: 16px;*/
+    overflow: hidden;
+}
+
+.footer-menu ul{
+    width:fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    list-style: none;
+    
+}
+
+.footer-menu ul li{
+    display: block;
+}
+
+.footer-menu ul li a{
+    color:bisque; 
+}
+
+.footer-menu-sm{
+    margin-top: 10px;
+    width: 60px;
+    float: left;
+}
+.footer-menu-sm img{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+/*Changes for tablet*/
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .footer-menu{
+        width: calc(100% - 40px);
+        padding: 40px 20px;
+        height: 230px;
+        background-color: #111;
+        /*margin-top: 16px;*/
+        overflow: hidden;
+    }
+    .footer-menu ul{
+        float: left;
+        line-height: 50px;  
+      }
+  
+      .footer-menu-sm{
+          
+          width: 60px;
+          float: right;
+      }
+}
+
+/*Changes for desktop*/
+
+@media screen and (min-width: 769px){
+   
+    .footer-menu{
+
+        width: calc(100% - 40px);
+        padding: 40px 20px;
+        height: 200px;
+        background-color: #111;
+        
+        overflow: hidden;
+    }
+
+    .footer-menu ul{
+      float: left;
+      line-height: 50px;  
+    }
+
+    .footer-menu-sm{
+        
+        width: 60px;
+        float: right;
+    }
+}
+
+/* PENSION AMORGOS */
+
+.PA-header{
+    text-align: center;
+    font-size: large;
+    margin: 20px 32px;
+    border:solid 1pt #000;
+}
+
+.pa-img{
+
+    width:200px;
+    height:150px;
+    float:left;
+    margin-left:32px;
+    margin-right: 10px;
+}
+
+.pa-info{
+
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 500; 
+    line-height: 25px;
+}
+
+.pa-img1{
+
+    width:200px;
+    height:150px;
+    float:right;
+    margin-right: 32px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pa-contact-info{
+    border:3pt solid #000;
+    margin:0 16px;
+}
+.pa-contact-info p{
+    text-align: center;
+}
+
+@media screen and (min-width:769px){
+
+    .PA-header{
+        clear:both;
+    }
+
+
+}

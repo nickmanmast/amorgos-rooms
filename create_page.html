@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <title> Amorgos Rooms </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/style.css">      
+  </head>
+
+
+  <body>
+       <header>
+            <a href="index.html" class="header-brand">Amorgos-rooms </a>
+             
+          <nav> 
+            <ul>
+              <li><a href="find-a-room.html">Find a room</a></li>
+              <li><a href="more.html">More </a></li> 
+              <li><a href="contact.html">Contact us</a></li>  
+            </ul>
+          </nav>  
+       </header>
+        
+       <main>
+            <section class="create_page-bgbanner">
+
+                <div class="create_page-bgbox">
+                    
+                  <h1> Enter your info to create a page </h1>
+
+                  <form action="create_pageBackEnd.php" method="POST">
+                    <table>
+                     <tr><td>Enter Company name:</td> <td><input type="text" name="cname"><br></td><tr>
+                     <tr><td>Enter the location:</td> <td><input type="text" name="loc"><br></td></tr>
+                     <tr><td>Describe your company:</td> <td><br><textarea name="comp-info" rows="2" cols="20"> </textarea><br></td></tr>
+                     <tr><td>Company phone:</td> <td><input type="tel" name="comp-phone"><br></td></tr>
+                     <tr><td>Company email:</td>  <td><input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$" type="email" name="email"><br></td></tr>
+                     <tr><td>Personal phone:</td> <td><input type="number" name="phone"><br></td></tr>
+                     <tr><td>Enter some pictures:</td> <td><input type="file" name="myFile">
+                     <input type="submit" value="upload file" name="sub"></td> <br></tr>
+                     <tr><td><input type="button" value="Ready!"></td></tr>
+                    </table> 
+                  </form>  
+
+                  <h1> If you already have a site enter its url </h1> <br><br>
+
+                  <form>
+                     Add your site: <input type="url" name="site"><br>  
+                     <input type="radio"> I want to continue with the upper url<br>
+                     <input type="button" value="Ready!"><br><br>
+
+                  </form>  
+
+                </div>  
+            </section>  
+       </main>
+
+
+      <footer>
+        <div class="footer-menu">
+          <ul>
+             <li><a href="more.html">Learn more</a> </li>
+             <li><a href="contact.html">Contact us </a></li>
+             <li><a href='sign-up.php'>Sign up </a></li>
+             <li><a href='login.php'>Login </a></li>
+             <li><a href="logout.php">Log out </a></li>
+          </ul>
+        
+        
+          <div class="footer-menu-sm">
+          
+             <a href="#">
+               <img src="media/images/instagram-logo.png" alt="instagram icon">
+             </a>
+             <a href="#">
+               <img src="media/images/facebook-logo.png" alt="facebook icon">
+             </a>
+             <a href="#">
+               <img src="media/images/pngwing.com.png" alt="tiktok icon">
+             </a>          
+          </div>  
+        </div>
+      </footer> 
+
+  </body>
+
+
+</html>

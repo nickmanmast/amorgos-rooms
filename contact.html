@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="UTF-8">
+      <title> Amorgos Rooms </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles/style.css">     
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+
+      <style>
+        .error {
+            color: red;
+        }
+    </style>
+
+  </head>
+
+ 
+  <body>
+       <header>
+            <a href="index.html" class="header-brand">Amorgos-rooms </a>
+             
+          <nav>
+            <ul>
+              <li><a href="find-a-room.html">Find a room</a></li>
+              <li><a href="more.html">More... </a></li> 
+              <li><a href="contact.html">Contact us</a></li>  
+            </ul>
+          </nav>  
+       </header>
+       
+       <main>
+
+           <section class="contact-bgbanner">
+
+              <div class="contact-head">
+
+                 If you are interested for a reservation please fill in the form below: 
+
+              </div>  
+
+
+              <div class="contact-bgbox">
+
+                <form action='contactBackEnd.php' method="POST" id="form" onsubmit="return checkForm()">
+                  
+                  <br>First Name: <input type="text" id="firstName" name="firstname" size="15" required><br>
+                  
+
+                  <br>Last Name: <input type="text" id="lastName" name="lastname" size="20" required><br>
+                  
+
+                  <br> Enter your email: <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,63}$" type="email" id="email" name="email" required><br>
+                 
+                  <br> Enter your phone number: <input type="tell" id="phone" name="phonenumber" ><br>
+                  <br> Number of rooms: <input type="number" name="num" min="1" max="10" selected value="1" required><br>
+                  <br> Number of people: 
+                  &nbsp;  <li> Adults: <input type="number" name="numa" min="1" max="10" selected value="2"></li>
+                  <br>  <li> Kids: <input type="number" name="numk" min="0" max="10" selected value="0"></li>
+                  <br> Arrival date: <input type="date" id="arrival" name="ardate" required><br>
+                  <br> Departure date: <input type="date" id="departure" name="depdate" required><br> 
+                  <br> Flexible dates: <input type="checkbox"><br>
+                  <br> Pet: <select name="pet">
+                       <option selected value="No">No
+                       <option value="Dog">Dog
+                       <option value="Cat">Cat
+                       <option value="Else">Else
+                      </select> <br>  
+                   Any comments...
+                    <br> <textarea name="comments" rows="2" cols="30">
+                        
+                     </textarea> 
+                  <br><br>  
+                    
+                  
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    <br>
+                    <input type="submit" value="Send reservation" name="sub">
+                </form><br>
+
+                  <script src="code.js/contact_validation.js"></script>
+                 
+
+              </div>  
+
+              
+
+           </section> 
+
+        
+       </main>
+
+
+      <footer>
+        <div class="footer-menu">
+          <ul>
+             <li><a href="more.html">Learn more</a></li>
+             <li><a href="contact.html">Contact us </a></li>
+             <li><a href='sign-up.php'>Sign up </a></li>
+             <li><a href='login.php'>Login </a></li>
+             <li><a href="logout.php">Log out </a></li>
+          </ul>
+        
+        
+          <div class="footer-menu-sm">
+          
+             <a href="#">
+               <img src="media/images/instagram-logo.png" alt="instagram icon">
+             </a>
+             <a href="#">
+               <img src="media/images/facebook-logo.png" alt="facebook icon">
+             </a>
+             <a href="#">
+               <img src="media/images/pngwing.com.png" alt="tiktok icon">
+             </a>          
+          </div>  
+        </div>
+      </footer> 
+
+  </body>
+
+
+</html>
